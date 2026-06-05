@@ -1,6 +1,8 @@
 // This is Part-01 JavaScript fundamentals
 
-// The first line of code
+// The code is commented out because it is not necessary to run all the code at once, and it will help us to focus on one topic at a time. You can uncomment the code to see the output and understand the concepts better.
+// The code is clear with comments explaining each topic, and it is organized in sections for better readability. The code covers the basics of JavaScript, including values and variables, data types, let, const and var, basic operators, operator precedence, strings and template literals, if/else statements, type conversion and coercion, truthy and falsy values, equality operators, and logical operators.
+
 
 /*
 
@@ -55,7 +57,7 @@ console.log(typeof null);
 
 let age = 17;
 const birthYear = 2008;
-name = 'Liam'; // this is declaring in a global scope
+const name = 'Liam'; // this is declaring in a global scope
 console.log(age, birthYear);
 
 // The best practice is to use const
@@ -192,5 +194,90 @@ console.log('23' / '2'); // this will give us 11.5 because the / operator will c
 let n = '1' + 1; // this will give us '11' because the + operator with a string will concatenate the string and the number
 n = n - 1; // this will give us 10 because the - operator will convert the string '11' to the number 11 and then perform the subtraction
 console.log(n);
+
+
+
+// 🎯Truthy and Falsy Values
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); // this will give us false because 0 is a falsy value   
+console.log(Boolean(undefined)); // this will give us false because undefined is a falsy value
+console.log(Boolean('Liam')); // this will give us true because 'Liam' is a truthy value
+console.log(Boolean({})); // this will give us true because an empty object is a truthy value
+
+
+const money = 0;
+if (money) { // coercion happens automatically here..
+    console.log("Don't spend it all ;)");
+} else {
+    console.log('You should get a job!');
+}
+
+let height;
+if(height) { // This won't work because height is undefined and undefined is a falsy value
+    console.log(`YAY! Height ids defiened`);
+} else{
+    console.log(`Height is UNDEFINED`);
+}
+
+
+
+
+// 🎯Equality Operators: == vs. ===
+
+const age = 18;
+if (age === 18) console.log(`You just became an adult :D (strict equality)`); // this will give us 'You just became an adult :D' because the === operator checks for both value and type and in this case, age is a number and 18 is also a number, so they are equal in both value and type.
+
+if (age == '18') console.log(`You just became an adult :D (loose equality)`); // this will also give us 'You just became an adult :D' because the == operator only checks for value and it does type coercion, so it will convert the string '18' to the number 18 and then compare them, and they are equal in value.
+// const favourite = Number(prompt('What is your favorite number?')); // this will give us a number value
+
+// === this does not do type coercion and it checks for both value and type
+// == this does type coercion and it only checks for value
+
+const favourite = 23;
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+    console.log('7 is also a cool number');
+} else if (favourite === 9) {
+    console.log('9 is also a cool number');
+} else {
+    console.log('Number is not 23 or 7');
+}
+
+
+
+// 🎯Logical Operators
+
+// Logical operators are used to combine multiple conditions. The logical operators are: && (and), || (or), ! (not)
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = false; // B
+
+console.log(hasDriversLicense && hasGoodVision); // this will give us false because both conditions are not true
+console.log(hasDriversLicense || hasGoodVision); // this will give us false because neither of the conditions is true
+console.log(!hasDriversLicense); // this will give us false because hasDriversLicense is true and the ! operator negates it to false
+
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (shouldDrive) {
+//     console.log(`Sarah is able to drive!`)
+// } else {
+//     console.log(`Someone else should drive...`)
+// }
+
+
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && !isTired); // this will give us false because isTired is true and the ! operator negates it to false, so the whole expression is false
+
+if(hasDriversLicense && hasGoodVision && !isTired) {
+    console.log(`Sarah is able to drive!`)
+} else {
+    console.log(`Someone else should drive...`)
+}
 
 */
