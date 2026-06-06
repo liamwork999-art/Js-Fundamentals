@@ -2,7 +2,7 @@
 
 // The code is commented out because it is not necessary to run all the code at once, and it will help us to focus on one topic at a time. You can uncomment the code to see the output and understand the concepts better.
 // The code is clear with comments explaining each topic, and it is organized in sections for better readability. The code covers the basics of JavaScript, including values and variables, data types, let, const and var, basic operators, operator precedence, strings and template literals, if/else statements, type conversion and coercion, truthy and falsy values, equality operators, and logical operators.
-
+// add the rest in here later 😜 
 
 /*
 
