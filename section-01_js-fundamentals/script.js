@@ -8,8 +8,8 @@
 /*    The code is clear with comments explaining each topic, and it is organized in sections for better readability. 
         The code covers the basics of JavaScript, including values and variables, data types, let, const and var, 
         basic operators, operator precedence, strings and template literals, if/else statements, type conversion and coercion, 
-        truthy and falsy values, equality operators, and logical operators.
-        add the rest in here later 😜 */
+        truthy and falsy values, equality operators, and logical operators, switch statement, statements and expressions, and the conditional (ternary) operator.
+*/
 
 /*
 
@@ -287,4 +287,91 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
     console.log(`Someone else should drive...`)
 }
 
+
+
+
+// 🎯The switch statement
+
+const day = 'saturday';
+
+switch (day){
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;  // this will stop the switch statement from running the next cases
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+
+console.log(`-------if statement-------`);
+
+
+if (day === 'monday'){
+    console,log(`Plan course struncture`);
+    console.log(`Go to coding meetup`);
+} else if (day === 'tuesday'){
+    console.log(`Prepare theory videos`);
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log(`write code examples`);
+} else if (day === 'friday') {
+    console.log(`Rocord videos`);
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log(`Enjoy the weekend :D`);
+} else {
+    console.log(`Not a valid day!`);
+}
+
+
+
+// 🎯Statements and Expressions
+
+// an expression is a piece of code that produces a value, for example: 3 + 4, true && false, 'Liam', 1991, etc.
+
+if (23 > 10) {
+    const str = '23 is bigger'; // this is a statement because it does not produce a value, it performs an action which is declaring a variable and assigning a value to it.
+}
+// a statement is a piece of code that performs an action, for example: if (23 > 10) { const str = '23 is bigger'; }, console.log('Hello World!'), etc.
+
+
+
+// 🎯The Conditional (Ternary) Operator
+
+const age = 17;
+// an operator produces a value, for example: 3 + 4, true && false, 'Liam', 1991, etc.
+// which means it's an expression because it produces a value, and we can assign that value to a variable or use it in a template literal, etc.
+
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧'); // this is a ternary operator and it is a shorter way of writing an if/else statement. The condition is before the question mark, the expression if true is after the question mark, and the expression if false is after the colon.
+// condition ? expressionIfTrue : expressionIfFalse
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine 🍷';
+} else {
+    drink2 = 'water 💧';
+}
+console.log(drink2);
+
+//  we can also use the ternary operator inside a template literal
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+
+
 */
+
+// End of Part-01 JavaScript fundamentals🏆.
