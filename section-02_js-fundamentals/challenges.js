@@ -1,0 +1,1 @@
+// This Contains the assignment for section 02 of js-fundamentals
