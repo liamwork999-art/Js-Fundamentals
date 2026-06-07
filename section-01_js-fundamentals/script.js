@@ -1,20 +1,28 @@
 // This is Part-01 JavaScript fundamentals
 
-/* The code is commented out because it is not necessary to run all the code at once, and it will help us to focus on one topic at a time. 
-   You can uncomment the code to see the output and understand the concepts better.
+/* 
+    The code is commented out because it is not necessary to run all the code at once, and it will help us to focus on one topic at a time. 
+    You can uncomment the code to see the output and understand the concepts better.
 */
 
 
-/*    The code is clear with comments explaining each topic, and it is organized in sections for better readability. 
+/*    
+        The code is clear with comments explaining each topic, and it is organized in sections for better readability. 
         The code covers the basics of JavaScript, including values and variables, data types, let, const and var, 
         basic operators, operator precedence, strings and template literals, if/else statements, type conversion and coercion, 
         truthy and falsy values, equality operators, and logical operators, switch statement, statements and expressions, and the conditional (ternary) operator.
 */
 
+
 /*
+
+// 🎯My First Code😇
 
 console.log("Hello Wrold!");
 
+*/
+
+/*
 
 // 🎯Values and Variables
 
@@ -29,7 +37,9 @@ console.log(firstName);
 
 // Naming rules and conventions camelCase.
 
+*/
 
+/*
 
 // 🎯Data Types in JavaScript
 
@@ -52,7 +62,9 @@ console.log(typeof children);
 
 console.log(typeof null);
 
+*/
 
+/*
 
 // 🎯let, const and var
 
@@ -69,7 +81,9 @@ console.log(age, birthYear);
 
 // The best practice is to use const
 
+*/
 
+/*
 
 // 🎯Basic Operators
 
@@ -104,7 +118,9 @@ console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
+*/
 
+/*
 
 // 🎯Operator Precedence
 
@@ -122,7 +138,9 @@ console.log(x, y);
 const avgAge = (ageLiam + ageSarah) / 2;
 console.log(avgAge); // The avg is 17
 
+*/
 
+/*
 
 // 🎯Strings and Template Literals
 
@@ -141,8 +159,9 @@ console.log(`Just a regular string...`);
 // \n means a new line
 console.log('Stings with \n multiple \n lines');
 
+*/
 
-
+/*
 
 // 🎯Taking Decisions: if / else Statements
 
@@ -168,8 +187,9 @@ if (birthYear <= 2000) {
 
 console.log(century); // this will give an error because the variable century is only defined in the if and else blocks and it is not defined outside of them. This is called block scope.
 
+*/
 
-
+/*
 
 // 🎯Type Conversion and Coercion
 
@@ -202,7 +222,9 @@ let n = '1' + 1; // this will give us '11' because the + operator with a string 
 n = n - 1; // this will give us 10 because the - operator will convert the string '11' to the number 11 and then perform the subtraction
 console.log(n);
 
+*/
 
+/*
 
 // 🎯Truthy and Falsy Values
 
@@ -229,7 +251,9 @@ if(height) { // This won't work because height is undefined and undefined is a f
 }
 
 
+*/
 
+/*
 
 // 🎯Equality Operators: == vs. ===
 
@@ -256,6 +280,9 @@ if (favourite === 23) {
 }
 
 
+*/
+
+/*
 
 // 🎯Logical Operators
 
@@ -287,8 +314,9 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
     console.log(`Someone else should drive...`)
 }
 
+*/
 
-
+/*
 
 // 🎯The switch statement
 
@@ -336,7 +364,9 @@ if (day === 'monday'){
     console.log(`Not a valid day!`);
 }
 
+*/
 
+/*
 
 // 🎯Statements and Expressions
 
@@ -346,8 +376,8 @@ if (23 > 10) {
     const str = '23 is bigger'; // this is a statement because it does not produce a value, it performs an action which is declaring a variable and assigning a value to it.
 }
 // a statement is a piece of code that performs an action, for example: if (23 > 10) { const str = '23 is bigger'; }, console.log('Hello World!'), etc.
-
-
+*/
+/*
 
 // 🎯The Conditional (Ternary) Operator
 
