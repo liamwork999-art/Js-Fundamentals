@@ -158,3 +158,5 @@ console.log(years);
 console.log(years.includes(1967)); // uses a strict equality, and boolane
 
 */
+
+// 🎯Objects
