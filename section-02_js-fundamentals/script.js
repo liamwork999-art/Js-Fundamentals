@@ -28,7 +28,8 @@ console.log(juice);
 
 const appleMangoJuice = fruitP(2, 4);
 console.log(appleMangoJuice);
-
+*/
+/*
 
 // 🎯Functions Declaration and Expressions
 
@@ -41,16 +42,16 @@ const age1 = calcAge1(2008);
 console.log(age1);
 
 // Function Expression
-const clacAge2 = function (birthYear){
-    return 2037 - birthYear;
-}
+
 
 const age2 = clacAge2(2008);
 console.log(age1, age2);
 
 // The difference is that we can call function declaration before they are defined but not with Expressions
 
+*/
 
+/*
 
 
 // 🎯Arrow Function
@@ -69,7 +70,8 @@ const yearsUntilRetiremnt = (birthYear, firstName) => {
 
 console.log(yearsUntilRetiremnt(2008, 'Liam'));
 
-
+*/
+/*
 
 // 🎯Functions calling other functions
 
@@ -91,4 +93,68 @@ console.log(fruitP(2, 3));
 
 */
 
+/*
+
 // 🎯Intro to Arrays
+
+// Arrays & objects are a data structure
+const friends = ['liam', 'john', 'peter'];
+console.log(friends);
+
+// const years = new Array(1192, 9182, 8394);
+// console.log(years);
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+console.log(friends);
+
+friends[2] = 'ray';
+console.log(friends);
+
+// An array can hold a diffent values at the same time
+const firstName = 'liam';
+const liam = [firstName, 17, 'araya'];
+console.log(liam);
+
+const clacAge = function (birthYear){
+    return 2026 - birthYear;
+}
+const years = [1990, 1967, 2002, 2004, 1980];
+
+let i;
+const ages = [];
+
+for(i in years){
+    ages.push(clacAge(years[i]));
+}
+console.log(ages);
+
+*/
+/*
+
+// 🎯Basic Array Operations[Methods]
+
+
+const years = [1990, 1967, 2002, 2004, 1980];
+console.log(years);
+years.push(9000);
+console.log(years);
+// Push appends a value to the end of the array, and it's a function
+
+years.unshift(1022);
+console.log(years)
+// Unshift appends a value to the begining of the array
+
+years.pop(); // pop will remove the last element , the opposite of push function
+console.log(years);
+
+years.shift(); // First element is deleted
+console.log(years);
+
+console.log(years.indexOf(1967));
+console.log(years);
+
+console.log(years.includes(1967)); // uses a strict equality, and boolane
+
+*/
