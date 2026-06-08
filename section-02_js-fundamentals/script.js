@@ -159,4 +159,105 @@ console.log(years.includes(1967)); // uses a strict equality, and boolane
 
 */
 
+/*
+
 // 🎯Objects
+
+// just like dictionary's in python😇
+
+const liamArray = ['Liam', 'Araya', 17, 'student', ['tigray', 'Mekelle', 'Lachi']];
+const liamObj = {
+    firstName: "Liam",
+    lastName: "Araya",
+    age: 17,
+    job: 'Student',
+    addres: ['tigray', 'Mekelle', 'Lachi']
+};
+console.log(liamObj.firstName);
+
+*/
+
+/*
+// 🎯Dot vs Bracket Notation
+
+// getting data from objects
+const liamArray = ['Liam', 'Araya', 17, 'student', ['tigray', 'Mekelle', 'Lachi']];
+const liamObj = {
+    firstName: "Liam",
+    lastName: "Araya",
+    age: 17,
+    job: 'Student',
+    addres: ['tigray', 'Mekelle', 'Lachi'],
+    friends: ['Michael', 'Lil uzi', 'Ray']
+};
+console.log(liamObj);
+
+console.log(liamObj.lastName); // the dot notation
+// or
+console.log(liamObj['lastName']); // the bracket notation
+
+const nameKey = 'Name';
+console.log(liamObj[`first${nameKey}`]);
+
+console.log(liamObj.job);
+
+// Adding new prop
+liamObj.location = 'Ethiopia';
+liamObj['Gmail'] = '@gmail.com';
+console.log(liamObj);
+
+const numberOfFriends = liamObj.friends.length;
+console.log(numberOfFriends);
+const bestFriend = liamObj.friends[0];
+console.log(bestFriend);
+
+*/
+/*
+
+// 🎯Object Methods
+const liam = {
+    firstName: "Liam",
+    lastName: "Araya",
+    birthYear: 2008,
+    job: 'Student',
+    addres: ['tigray', 'Mekelle', 'Lachi'],
+    friends: ['Michael', 'Lil uzi', 'Ray'],
+    canDrive: false,
+    // clacAge: function(birthYear){ // We can have a function inside an object, which were the key is the function's name
+    //     return 2026 - birthYear; // and we will use the function expression b/z the object is waiting for expressions
+    // }
+    // clacAge: function(){ // this means the liam object it self that means 'this' = 'liam'
+    //     return 2026 - this.birthYear;
+    // }
+    clacAge: function(){
+        this.age = 2026 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function(){
+        return `${this.firstName} is a ${this.clacAge()}-years old ${liam.job}, and he has ${this.canDrive ? 'a' : 'no'} drivers license.`;
+    }
+};
+
+console.log(liam.clacAge());
+console.log(liam.age);
+console.log(liam.age);
+
+console.log(liam.age);
+console.log(liam.age);
+
+// console.log(liam['clacAge'](liam.birthYear));
+
+// Challenge
+// "Liam is a 46-years old teacher, and he has a/no drivers license."
+// if (liam.canDrive){
+//     console.log(`${liam.firstName} is a ${liam.age}-years old ${liam.job}, and can drive.`)
+// } else{
+//     console.log(`${liam.firstName} is a ${liam.age}-years old ${liam.job}, and cann't drive.`)
+// }
+
+console.log(liam.getSummary());
+// Fun fact arrays are also objects
+
+*/
+
+// 🎯Iteration the for loop
