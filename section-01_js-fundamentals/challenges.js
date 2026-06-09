@@ -24,7 +24,7 @@ GOOD LUCK 😀
 
 /*
 
-// ✔️Challenge done 1#
+// ✔️Challenge Done 1#
 
 const markMass = 95;
 const markHieght = 1.88;
@@ -62,7 +62,7 @@ GOOD LUCK
 
 /*
 
-// ✔️Challenge done 2#
+// ✔️Challenge Done 2#
 
 
 const markMass = 95;
@@ -114,7 +114,7 @@ Test data:
 
 /*
 
-// ✔️Challenge done 3#
+// ✔️Challenge Done 3#
 
 const dolphinsScore = [97, 112, 101];
 const koalasScore = [109, 95, 106];
@@ -160,7 +160,7 @@ GOOD LUCK �
 
 /*
 
-// ✔️Challenge done 4#
+// ✔️Challenge Done 4#
 
 // tip 15% if the value is b/n 50 and 300 if not the tip is 20%
 
@@ -170,4 +170,4 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bil
 
 */
 
-// End of the challenges for section 01 of js-fundamentals.
+// End of the challenges for section 01 of js-fundamentals🏆.

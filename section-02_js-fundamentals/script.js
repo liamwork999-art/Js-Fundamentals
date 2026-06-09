@@ -1,4 +1,4 @@
-// This is Part-01 JavaScript fundamentals
+// This is Part-02 JavaScript fundamentals
 
 /* 
     The code is commented out because it is not necessary to run all the code at once, and it will help us to focus on one topic at a time. 
@@ -260,4 +260,126 @@ console.log(liam.getSummary());
 
 */
 
+/*
+
 // 🎯Iteration the for loop
+
+
+// console.log(`Lifting weights repetition 1 💪`);
+// console.log(`Lifting weights repetition 2 💪`);
+// console.log(`Lifting weights repetition 3 💪`);
+// console.log(`Lifting weights repetition 4 💪`);
+// console.log(`Lifting weights repetition 5 💪`);
+// console.log(`Lifting weights repetition 6 💪`);
+// console.log(`Lifting weights repetition 7 💪`);
+// console.log(`Lifting weights repetition 8 💪`);
+
+// instead of this we can create a loop
+// for loop keeps running while the condition is true
+// for(let i = 1; i <= 10; i++){
+//     console.log(`Lifting weights repetition ${i} 💪`);
+// }
+const liam = [
+    'Liam', 
+    'Araya', 
+    17, 
+    'student', 
+    ['tigray', 'Mekelle', 'Lachi']
+];
+const types = [];
+
+for(let i = 0; i < liam.length; i++){
+    console.log(liam[i], typeof liam[i]);
+
+    // types[i] = typeof liam[i];
+    types.push(typeof liam[i]);
+}
+
+console.log(types);
+
+const currentYear = 2026;
+const years = [1991, 2007, 1986, 2020];
+const clacAge = function(year){
+    return currentYear - year;
+};
+const ages = [];
+for(let i = 0; i < years.length; i++){
+    ages.push(clacAge(years[i]));
+}
+console.log(years);
+console.log(ages);
+
+// continue and break
+for(let i = 0; i < liam.length; i++){
+    if (typeof liam[i] !== 'string') continue; // Only strings will be out putted for continue will jump an iteration who are not strings
+    console.log(liam[i], typeof liam[i]);
+
+}
+for(let i = 0; i < liam.length; i++){
+    if (typeof liam[i] === 'number') break; // as soon as number is found the loop will be exited
+    console.log(liam[i], typeof liam[i]);
+
+}
+
+*/
+
+/*
+
+// 🎯Looping backwards and Looping in loops
+
+const liam = [
+    'Liam', 
+    'Araya', 
+    17, 
+    'student', 
+    ['tigray', 'Mekelle', 'Lachi'],
+    true
+];
+// Loopping backwards
+
+for(let i = liam.length - 1; i >= 0; i--){
+    console.log(i, liam[i]);
+}
+
+// Looping inside a loop
+
+for (let exr = 1; exr <= 3; exr++){
+    console.log(`------Starting exr ${exr}.`);
+    for(let rep = 1; rep <= 5; rep++){
+        console.log(`   -> Reps per exercise ${rep} 💪!`);
+    }
+}
+
+*/
+
+/*
+// 🎯While loop
+
+// for(let i = 1; i <= 10; i++){
+//     console.log(`Lifting weights repetition ${i} 💪`);
+// }
+
+// we can only take a condition
+
+// console.log(`--------WHILE LOOP`);
+
+
+let rep = 1;
+while(rep <= 10){
+    console.log(`Lifting weights repetition ${rep} 💪`);
+    rep++;
+}
+
+let rollDice = Math.trunc(Math.random() * 6) + 1;
+console.log(rollDice);
+
+if(rollDice === 6) console.log(`You got 6, the loop is over`);
+while(rollDice !== 6){
+    console.log(`You rolled a ${rollDice}`);
+    rollDice = Math.trunc(Math.random() * 6) + 1;
+    if(rollDice === 6) console.log(`You got 6, the loop is over`);
+}
+
+*/
+
+//   End of Part-02 JavaScript fundamentals🏆.
